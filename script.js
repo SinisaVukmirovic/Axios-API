@@ -149,9 +149,9 @@ function errorHandling() {
                 console.log(err.response.status);
                 console.log(err.response.headers);
     
-            if (err.response.status === 404) {
-                alert('Error: Page Not Found');
-            }
+                if (err.response.status === 404) {
+                    alert('Error: Page Not Found');
+                }
             } 
             else if (err.request) {
                 // Request was made but no response
